@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sheer Look</string>
+    <string name="prompt_input_hint">Describe the file you\'re looking for…</string>
+    <string name="search_button_text">Search</string>
+    <string name="folder_picker_text">Choose Folder</string>
+    <string name="folder_path_current">Current folder: %1$s</string>
+    <string name="folder_path_no_folder_error">No folder selected</string>
+    <string name="toast_no_app_error">No app found to open this file.</string>
+    <string name="toast_prompt_empty">Prompt empty</string>
+    <string name="invalid_folder_error">Invalid folder selected</string>
+    <string name="file_list_match">Match: %1$.0f%% | %2$s</string>
+</resources>
