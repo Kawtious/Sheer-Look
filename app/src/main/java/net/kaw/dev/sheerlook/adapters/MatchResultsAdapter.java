@@ -1,4 +1,4 @@
-package net.kaw.dev.sheerlook;
+package net.kaw.dev.sheerlook.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,17 +9,20 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import net.kaw.dev.sheerlook.R;
+import net.kaw.dev.sheerlook.ai.MatchResult;
+
 import java.util.List;
 
-public class FileListAdapter extends ArrayAdapter<FileMatchResult> {
-    public FileListAdapter(Context context, List<FileMatchResult> results) {
+public class MatchResultsAdapter extends ArrayAdapter<MatchResult> {
+    public MatchResultsAdapter(Context context, List<MatchResult> results) {
         super(context, 0, results);
     }
 
     @NonNull
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
-        FileMatchResult result = getItem(position);
+        MatchResult result = getItem(position);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext())
@@ -36,7 +39,8 @@ public class FileListAdapter extends ArrayAdapter<FileMatchResult> {
                         String.format(
                                 getContext().getResources().getString(R.string.file_list_match),
                                 result.getMatchPercentage(),
-                                result.getFile().getAbsolutePath()
+                                result.getFile().getUri(),
+                                result.getDescription()
                         )
                 );
 

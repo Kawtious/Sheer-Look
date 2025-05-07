@@ -41,4 +41,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     implementation(libs.commons.io)
+    implementation(libs.volley)
 }

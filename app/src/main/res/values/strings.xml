@@ -8,5 +8,5 @@
     <string name="toast_no_app_error">No app found to open this file.</string>
     <string name="toast_prompt_empty">Prompt empty</string>
     <string name="invalid_folder_error">Invalid folder selected</string>
-    <string name="file_list_match">Match: %1$.0f%% | %2$s</string>
+    <string name="file_list_match">Match: %1$.0f%% | %2$s | %3$s</string>
 </resources>
